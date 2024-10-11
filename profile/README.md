@@ -1,5 +1,6 @@
 ## Hi there 👋
 
+PPGames is small indie game organization, making Unity Games in C#
 <!--
 
 **Here are some ideas to get you started:**
