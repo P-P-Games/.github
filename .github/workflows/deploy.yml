@@ -16,7 +16,6 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v4
-        working-directory: classic
         with:
           node-version: 18
           cache: npm
