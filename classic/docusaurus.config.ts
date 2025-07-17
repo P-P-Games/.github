@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/P-P-Games/.github/tree/f6448a94e0bdda122313331036130d1fbf0bf0f0/classic/docs',
+            'https://github.com/P-P-Games/.github/tree/f6448a94e0bdda122313331036130d1fbf0bf0f0/classic',
         },
         blog: {
           showReadingTime: true,
