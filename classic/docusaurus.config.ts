@@ -73,24 +73,25 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'PP Games',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'PPGames Logo',
+        src: 'img/ppgames-color-logo-no-background.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          sidebarId: 'csharpforkidsSidebar',
+          position: 'right',
+          label: 'C# for Kids',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        /*
+        {to: '/blog', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
       ],
     },
     footer: {
