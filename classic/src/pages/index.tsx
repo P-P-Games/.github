@@ -21,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/c-sharp-for-kids">
+            to="/docs/c-sharp-for-kids/introduction">
             C# for Kids Tutorial ⏱️
           </Link>
         </div>
