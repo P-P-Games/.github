@@ -5,9 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'PP Games',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'P&P Games',
+  tagline: 'Small Indie Game Company',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
