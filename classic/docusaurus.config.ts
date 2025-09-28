@@ -25,7 +25,12 @@ const config: Config = {
   projectName: 'c#forKids', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -51,10 +56,7 @@ const config: Config = {
               'tip',
               'info', 
               'caution',
-              'danger',
-              'exercise',
-              'cta',
-              'calltoaction'
+              'danger'
             ],
             extendDefaults: true,
           },
@@ -139,12 +141,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/P-P-Games',
             },
           ],
         },
@@ -154,6 +152,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['csharp'],
     },
   } satisfies Preset.ThemeConfig,
 };

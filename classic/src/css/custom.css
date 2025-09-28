@@ -31,6 +31,102 @@
 
 /* Custom Admonition Styles */
 
+/* Practice Block - Purple/Blue theme for coding */
+.alert--practice {
+  --ifm-alert-background-color: #f0f4ff;
+  --ifm-alert-background-color-highlight: #e0e7ff;
+  --ifm-alert-foreground-color: #4338ca;
+  --ifm-alert-border-color: #6366f1;
+}
+
+[data-theme='dark'] .alert--practice {
+  --ifm-alert-background-color: #1e1b4b;
+  --ifm-alert-background-color-highlight: #312e81;
+  --ifm-alert-foreground-color: #c7d2fe;
+  --ifm-alert-border-color: #6366f1;
+}
+
+/* Override the default SVG icon for practice admonition */
+.alert--practice .admonition-icon svg {
+  display: none !important;
+}
+
+.alert--practice .admonition-icon {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  position: relative;
+}
+
+.alert--practice .admonition-icon::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%234338ca' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m7 8-4 4 4 4'/%3e%3cpath d='m17 8 4 4-4 4'/%3e%3cpath d='m14 4-4 16'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+[data-theme='dark'] .alert--practice .admonition-icon::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23c7d2fe' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m7 8-4 4 4 4'/%3e%3cpath d='m17 8 4 4-4 4'/%3e%3cpath d='m14 4-4 16'/%3e%3c/svg%3e");
+}
+
+/* Override tip blocks to look like coding practice */
+.alert--tip {
+  --ifm-alert-background-color: #f0f4ff;
+  --ifm-alert-background-color-highlight: #e0e7ff;
+  --ifm-alert-foreground-color: #4338ca;
+  --ifm-alert-border-color: #6366f1;
+}
+
+[data-theme='dark'] .alert--tip {
+  --ifm-alert-background-color: #1e1b4b;
+  --ifm-alert-background-color-highlight: #312e81;
+  --ifm-alert-foreground-color: #c7d2fe;
+  --ifm-alert-border-color: #6366f1;
+}
+
+/* Override tip icon with coding icon - More aggressive approach */
+.alert--tip .admonition-icon {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  width: 20px !important;
+  height: 20px !important;
+  overflow: hidden;
+}
+
+/* Completely hide all children of the icon container */
+.alert--tip .admonition-icon * {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Show only our custom rocket */
+.alert--tip .admonition-icon::after {
+  content: '🚀';
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 /* Exercise Block - Green theme */
 .alert--exercise {
   --ifm-alert-background-color: #f0fdf4;
@@ -87,6 +183,24 @@
 }
 
 /* Custom titles for admonitions - Complete override method */
+.alert--practice .admonition-heading h5 {
+  visibility: hidden;
+  position: relative;
+}
+
+.alert--practice .admonition-heading h5::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "CODING PRACTICE";
+  color: var(--ifm-alert-foreground-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
 .alert--exercise .admonition-heading h5 {
   visibility: hidden;
   position: relative;

@@ -4,7 +4,7 @@ title: C# Variables (Int, String)
 sidebar_label: C# Variables (Int, String)
 ---
 
-# C Sharp for Kids - L02 C# Variables
+## C# Variables
 
 Welcome to C Sharp for Kids! 🎮✨
 
@@ -14,14 +14,14 @@ In this tutorial, we'll learn about **variables** in C Sharp, which are the buil
 - **Bool**: for true/false values liek true, false
 - **Float**: for floating-point numbers like 3.1415, 2.87
 
-## What You Will Learn
+#### What You Will Learn
 
 - How to create and initialize variables
 - How to update variable values with simple math
 - How to manipulate text with String variables
 - How to see your code in action in Unity
 
-## Example: Int Variables - Tracking Game Score
+### Int Variables
 
 Imagine you're playing a game and want to keep track of your score. You can create an `int` variable:
 
@@ -49,7 +49,7 @@ World.Robot.ChangeName(score.ToString());
 ```
 
 
-## Example: String Variable - Changing the Robot's Name
+### String Variables
 
 You can also create a string variable to store and change the robot's name:
 ```csharp
@@ -62,18 +62,46 @@ name = name + " Is Rookie!";
 World.Robot.ChangeName(name);
 ```
 
-:::exercise Practice Time!
-**Your Task:**
+## Practice time!
 
-Create a variable called `playerName` and assign your name to it. Then print it to the console using `Console.WriteLine()`.
+### Challenge #1
+:::tip 🚀 Coding Practice
+In C# **create variable called `playerName`** and **assign your name** to it. 
+Then print it to over the Robot head `World.Robot.ChangeName` function.
 
-```csharp
-// Your code here
-string playerName = "YourName";
-World.Robot.ChangeName(playerName);
-```
 **Changes the robot's name to your name** and see the results in Unity!
 :::
+
+<details>
+<summary>💡 **Solution** (Click to expand)</summary>
+
+Here's the complete solution for the exercise:
+
+```csharp
+// Step 1: Create a string variable with your name
+string playerName = "Alice";
+
+// Step 2: Change the robot's name to your player name
+World.Robot.ChangeName(playerName);
+
+// Optional: You can also combine it in one line
+// World.Robot.ChangeName("Alice");
+
+// For console output (if you want to see it in the console too):
+Console.WriteLine("Player name is: " + playerName);
+```
+
+**What this code does:**
+1. **Line 2:** Creates a string variable called `playerName` and stores your name in it
+2. **Line 5:** Uses the Unity function to change the robot's name to whatever is stored in `playerName`
+3. **Line 11:** Prints the player name to the console (optional)
+
+**Try different variations:**
+- Use different names
+- Try combining first and last name: `string playerName = "Alice Johnson";`
+- Add some fun text: `string playerName = "Super " + "Alice";`
+
+</details>
 
 
 ## Need a Visual Walkthrough?
