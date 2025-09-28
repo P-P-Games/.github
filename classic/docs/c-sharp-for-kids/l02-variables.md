@@ -1,7 +1,7 @@
 ---
 id: variables
-title: L02 - Variables (Int, String)
-sidebar_label: L02 - Variables (Int, String)
+title: C# Variables (Int, String)
+sidebar_label: C# Variables (Int, String)
 ---
 
 # C Sharp for Kids - L02 C# Variables
@@ -62,8 +62,8 @@ name = name + " Is Rookie!";
 World.Robot.ChangeName(name);
 ```
 
-:::exercise
-**Try it yourself!**
+:::exercise Practice Time!
+**Your Task:**
 
 Create a variable called `playerName` and assign your name to it. Then print it to the console using `Console.WriteLine()`.
 

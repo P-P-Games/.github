@@ -31,23 +31,23 @@
 
 /* Custom Admonition Styles */
 
-/* Exercise Block - Purple theme */
+/* Exercise Block - Green theme */
 .alert--exercise {
-  --ifm-alert-background-color: #f3e8ff;
-  --ifm-alert-background-color-highlight: #e9d5ff;
-  --ifm-alert-foreground-color: #6b21a8;
-  --ifm-alert-border-color: #8b5cf6;
+  --ifm-alert-background-color: #f0fdf4;
+  --ifm-alert-background-color-highlight: #dcfce7;
+  --ifm-alert-foreground-color: #166534;
+  --ifm-alert-border-color: #22c55e;
 }
 
 [data-theme='dark'] .alert--exercise {
-  --ifm-alert-background-color: #2d1b69;
-  --ifm-alert-background-color-highlight: #3730a3;
-  --ifm-alert-foreground-color: #c4b5fd;
-  --ifm-alert-border-color: #8b5cf6;
+  --ifm-alert-background-color: #052e16;
+  --ifm-alert-background-color-highlight: #14532d;
+  --ifm-alert-foreground-color: #86efac;
+  --ifm-alert-border-color: #22c55e;
 }
 
 .alert--exercise .admonition-icon svg {
-  fill: #8b5cf6;
+  fill: #22c55e;
   stroke: #8b5cf6;
 }
 
@@ -84,4 +84,43 @@
 .alert--calltoaction .admonition-icon::before {
   content: "🎯";
   font-size: 1.2em;
+}
+
+/* Custom titles for admonitions - Complete override method */
+.alert--exercise .admonition-heading h5 {
+  visibility: hidden;
+  position: relative;
+}
+
+.alert--exercise .admonition-heading h5::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "EXERCISE";
+  color: var(--ifm-alert-foreground-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.alert--cta .admonition-heading h5,
+.alert--calltoaction .admonition-heading h5 {
+  visibility: hidden;
+  position: relative;
+}
+
+.alert--cta .admonition-heading h5::after,
+.alert--calltoaction .admonition-heading h5::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "CALL TO ACTION";
+  color: var(--ifm-alert-foreground-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
