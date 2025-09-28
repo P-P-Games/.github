@@ -28,3 +28,60 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom Admonition Styles */
+
+/* Exercise Block - Purple theme */
+.alert--exercise {
+  --ifm-alert-background-color: #f3e8ff;
+  --ifm-alert-background-color-highlight: #e9d5ff;
+  --ifm-alert-foreground-color: #6b21a8;
+  --ifm-alert-border-color: #8b5cf6;
+}
+
+[data-theme='dark'] .alert--exercise {
+  --ifm-alert-background-color: #2d1b69;
+  --ifm-alert-background-color-highlight: #3730a3;
+  --ifm-alert-foreground-color: #c4b5fd;
+  --ifm-alert-border-color: #8b5cf6;
+}
+
+.alert--exercise .admonition-icon svg {
+  fill: #8b5cf6;
+  stroke: #8b5cf6;
+}
+
+/* Call to Action Block - Orange/Red theme */
+.alert--cta,
+.alert--calltoaction {
+  --ifm-alert-background-color: #fef3c7;
+  --ifm-alert-background-color-highlight: #fed7aa;
+  --ifm-alert-foreground-color: #d97706;
+  --ifm-alert-border-color: #f59e0b;
+}
+
+[data-theme='dark'] .alert--cta,
+[data-theme='dark'] .alert--calltoaction {
+  --ifm-alert-background-color: #78350f;
+  --ifm-alert-background-color-highlight: #92400e;
+  --ifm-alert-foreground-color: #fcd34d;
+  --ifm-alert-border-color: #f59e0b;
+}
+
+.alert--cta .admonition-icon svg,
+.alert--calltoaction .admonition-icon svg {
+  fill: #f59e0b;
+  stroke: #f59e0b;
+}
+
+/* Custom icons for the admonitions */
+.alert--exercise .admonition-icon::before {
+  content: "🏋️";
+  font-size: 1.2em;
+}
+
+.alert--cta .admonition-icon::before,
+.alert--calltoaction .admonition-icon::before {
+  content: "🎯";
+  font-size: 1.2em;
+}

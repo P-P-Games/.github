@@ -62,10 +62,16 @@ name = name + " Is Rookie!";
 World.Robot.ChangeName(name);
 ```
 
-## Try It Yourself!
+:::exercise
+**Try it yourself!**
 
-Now, challenge yourself to create a program that:
-:::info
+Create a variable called `playerName` and assign your name to it. Then print it to the console using `Console.WriteLine()`.
+
+```csharp
+// Your code here
+string playerName = "YourName";
+World.Robot.ChangeName(playerName);
+```
 **Changes the robot's name to your name** and see the results in Unity!
 :::
 

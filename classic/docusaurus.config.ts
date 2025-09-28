@@ -45,6 +45,19 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/P-P-Games/.github/tree/f6448a94e0bdda122313331036130d1fbf0bf0f0/classic',
+          admonitions: {
+            keywords: [
+              'note',
+              'tip',
+              'info', 
+              'caution',
+              'danger',
+              'exercise',
+              'cta',
+              'calltoaction'
+            ],
+            extendDefaults: true,
+          },
         },
         blog: {
           showReadingTime: true,
