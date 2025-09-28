@@ -1,5 +1,5 @@
 ---
-id: introduction
+id: variables
 title: L02 - Variables (Int, String)
 sidebar_label: L02 - Variables (Int, String)
 ---
